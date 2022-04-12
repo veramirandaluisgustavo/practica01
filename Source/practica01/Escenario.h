@@ -4,29 +4,25 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "camara.generated.h"
+#include "Escenario.generated.h"
 
 UCLASS()
-class PRACTICA01_API Acamara : public AActor
+class PRACTICA01_API AEscenario : public AActor
 {
 	GENERATED_BODY()
 	
 private:
 	float Ubicacionx;
 	float Ubicaciony;
+	int32 size;
 	float velocidad;
-	float angulo;
-
-
 public:	
 	// Sets default values for this actor's properties
-	Acamara();
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "vision")
+	AEscenario();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "fondo")
 		float Posicionx;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "vision")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "fondo")
 		float Posiciony;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "vision")
-		float size;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
