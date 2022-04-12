@@ -16,6 +16,7 @@ private:
 	float size;
 	float velocidad;
 	float damage;
+	float resistencia;
 
 
 public:	
