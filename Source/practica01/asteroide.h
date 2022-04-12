@@ -22,9 +22,10 @@ private:
 public:	
 	// Sets default values for this actor's properties
 	Aasteroide();
-	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "trava")
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "trava")
 	float Posicionx;
-	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "trava")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "trava")
 	float Posiciony;
 protected:
 	// Called when the game starts or when spawned

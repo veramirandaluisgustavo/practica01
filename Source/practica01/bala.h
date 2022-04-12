@@ -22,9 +22,9 @@ private:
 public:	
 	// Sets default values for this actor's properties
 	Abala();
-	UPROPERTY(EditAnyWhare,BlueprintRearWrite,category="prueba")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite,category="prueba")
 	float Posicionx;
-	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "prueba")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, category = "prueba")
 	float Posiciony;
 protected:
 	// Called when the game starts or when spawned
