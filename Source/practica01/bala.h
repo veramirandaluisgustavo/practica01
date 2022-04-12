@@ -16,7 +16,8 @@ private:
 	float size;
 	float velocidad;
 	float damage;
-	float vida;
+
+
 public:	
 	// Sets default values for this actor's properties
 	Abala();
