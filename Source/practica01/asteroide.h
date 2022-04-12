@@ -4,27 +4,27 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "bala.generated.h"
+#include "asteroide.generated.h"
 
 UCLASS()
-class PRACTICA01_API Abala : public AActor
+class PRACTICA01_API Aasteroide : public AActor
 {
 	GENERATED_BODY()
+	
 private:
 	float PosicionIniciox;
 	float PosicionInicioy;
 	float size;
 	float velocidad;
 	float damage;
+	float resistencia;
 	float colision;
-
-
 public:	
 	// Sets default values for this actor's properties
-	Abala();
-	UPROPERTY(EditAnyWhare,BlueprintRearWrite,category="prueba")
+	Aasteroide();
+	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "trava")
 	float Posicionx;
-	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "prueba")
+	UPROPERTY(EditAnyWhare, BlueprintRearWrite, category = "trava")
 	float Posiciony;
 protected:
 	// Called when the game starts or when spawned
